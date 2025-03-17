@@ -47,46 +47,6 @@
     Custom styles
 **************************/
 
-@font-face {
-  font-family: 'SF-Pro';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url('../fonts/sf_pro_300.woff2') format("woff2")
-}
-
-@font-face {
-  font-family: 'SF-Pro';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('../fonts/sf_pro_400.woff2') format("woff2")
-}
-
-@font-face {
-  font-family: 'SF-Pro';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url('../fonts/sf_pro_500.woff2') format("woff2")
-}
-
-@font-face {
-  font-family: 'SF-Pro';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url('../fonts/sf_pro_600.woff2') format("woff2")
-}
-
-@font-face {
-  font-family: 'Bebas Neue';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('../fonts/bebas_neue.woff2') format("woff2")
-}
-
 body {
   font-family: 'SF Pro', sans-serif;
   color: #2C0815;
