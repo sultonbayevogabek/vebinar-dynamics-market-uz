@@ -9,7 +9,7 @@
     joinButton.disabled = true;
     await statistics.onClickTgBtn();
     joinButton.disabled = false;
-    window.location.href = 'https://t.me/+9oLYtsv0xvc4MDky';
+    window.location.href = 'https://t.me/zebodoctor_sbf1';
   })
 
   if (user && user?.name && user?.phone && user?.time) {
