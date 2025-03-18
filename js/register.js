@@ -4,11 +4,12 @@
   const statistics = new Statistics();
   let user = JSON.parse(localStorage.getItem('user'));
 
-  document.querySelector('#joinToChannel')?.addEventListener('click', async (e) => {
-    e.target.setAttribute('disabled', 'true');
+  const joinButton = document.querySelector('#joinToChannel')
+  joinButton?.addEventListener('click', async (e) => {
+    joinButton.disabled = true;
     await statistics.onClickTgBtn();
-    e.target.removeAttribute('disabled');
-    window.location.href = 'https://t.me/+jcN0N7kRX0ljMWIy';
+    joinButton.disabled = false;
+    window.location.href = 'https://t.me/+-anOngXRXHw5Y2M6';
   })
 
   if (user && user?.name && user?.phone && user?.time) {
@@ -20,7 +21,7 @@
     formData.append(`Foydalanuvchi ID`, statistics.userId);
     formData.append(`Timestamp`, statistics.time?.toString());
 
-    let response = await fetch('https://script.google.com/macros/s/AKfycbxRE4sCEGe2lGLnDPXg4vJYJ0C6YfK2unf87Z20y_RuxXgSazCZUhYMKWjKZ-c5eERl/exec', {
+    let response = await fetch('https://script.google.com/macros/s/AKfycbwYSHV5hd015-U5k6yGThwneljnpqGz3gGTlOpFnV7W-EO7M_2LQ0JUaiS2S6W1cmW6tA/exec', {
       method: 'POST',
       body: formData
     })
