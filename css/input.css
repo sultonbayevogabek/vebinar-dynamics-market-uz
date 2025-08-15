@@ -5,42 +5,42 @@
 @import "tailwindcss";
 
 @theme {
-    --breakpoint-*: initial;
-    --blur-*: initial;
-    --default-*: initial;
-    --perspective-*: initial;
-    --drop-*: initial;
-    --shadow-*: initial;
-    --color-*: initial;
-    --container-*: initial;
-    --text-*: initial;
-    --font-weight-*: initial;
-    --tracking-*: initial;
-    --leading-*: initial;
-    --radius-*: initial;
-    --inset-*: initial;
-    --inset-shadow-*: initial;
-    --ease-*: initial;
-    --aspect-*: initial;
-    --font-*: initial;
-    --spacing-*: initial;
+  --breakpoint-*: initial;
+  --blur-*: initial;
+  --default-*: initial;
+  --perspective-*: initial;
+  --drop-*: initial;
+  --shadow-*: initial;
+  --color-*: initial;
+  --container-*: initial;
+  --text-*: initial;
+  --font-weight-*: initial;
+  --tracking-*: initial;
+  --leading-*: initial;
+  --radius-*: initial;
+  --inset-*: initial;
+  --inset-shadow-*: initial;
+  --ease-*: initial;
+  --aspect-*: initial;
+  --font-*: initial;
+  --spacing-*: initial;
 
-    --breakpoint-400px: 400px;
-    --breakpoint-500px: 500px;
-    --breakpoint-600px: 600px;
-    --breakpoint-700px: 700px;
-    --breakpoint-800px: 800px;
-    --breakpoint-900px: 900px;
-    --breakpoint-1000px: 1000px;
-    --breakpoint-1100px: 1100px;
-    --breakpoint-1200px: 1200px;
-    --breakpoint-1300px: 1300px;
-    --breakpoint-1400px: 1400px;
-    --breakpoint-1500px: 1500px;
-    --breakpoint-1600px: 1600px;
-    --breakpoint-1700px: 1700px;
-    --breakpoint-1800px: 1800px;
-    --breakpoint-1900px: 1900px;
+  --breakpoint-400px: 400px;
+  --breakpoint-500px: 500px;
+  --breakpoint-600px: 600px;
+  --breakpoint-700px: 700px;
+  --breakpoint-800px: 800px;
+  --breakpoint-900px: 900px;
+  --breakpoint-1000px: 1000px;
+  --breakpoint-1100px: 1100px;
+  --breakpoint-1200px: 1200px;
+  --breakpoint-1300px: 1300px;
+  --breakpoint-1400px: 1400px;
+  --breakpoint-1500px: 1500px;
+  --breakpoint-1600px: 1600px;
+  --breakpoint-1700px: 1700px;
+  --breakpoint-1800px: 1800px;
+  --breakpoint-1900px: 1900px;
 }
 
 /*************************
@@ -48,116 +48,110 @@
 **************************/
 
 body {
-    font-family: 'Poppins', sans-serif;
-    @apply bg-cover bg-no-repeat bg-right-top;
-    background-image: url('../img/bg-main@1x.jpg');
-}
-
-.font-staatliches {
-    font-family: 'Staatliches', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  @apply bg-cover bg-no-repeat bg-right-top;
+  background-image: url('../img/bg-main@1x.jpg');
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-    body {
-        background-image: url(../img/bg-main@2x.jpg)
-    }
+  body {
+    background-image: url(../img/bg-main@2x.jpg)
+  }
 }
 
 @media only screen and (max-width: 1100px) {
-    body {
-        background-image: url(../img/bg-mobile@1x.jpg);
-        background-position: bottom center;
-        background-size: cover;
-    }
+  body {
+    background-image: url(../img/bg-mobile@1x.jpg);
+    background-position: bottom center;
+    background-size: cover;
+  }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-    @media only screen and (max-width: 1100px) {
-        body {
-            background-image: url(../img/bg-mobile@2x.jpg);
-            background-position: bottom center;
-        }
+  @media only screen and (max-width: 1100px) {
+    body {
+      background-image: url(../img/bg-mobile@2x.jpg);
+      background-position: bottom center;
     }
+  }
 }
 
 .wrapper {
-    @apply w-full 1100px:w-[90%] max-w-[1400px] mx-auto px-[10px];
+  @apply w-full 1100px:w-[90%] max-w-[1400px] mx-auto px-[10px];
 }
 
 .wrapper-b {
-    @apply w-full 1100px:w-[90%] max-w-[1400px] mx-auto;
+  @apply w-full 1100px:w-[90%] max-w-[1400px] mx-auto;
 }
 
 .main-button {
-    font-family: 'Staatliches', sans-serif;
-    cursor: pointer;
-    background: linear-gradient(90deg, #00B430 0%, #00A8BB 100%);
-    @apply relative overflow-hidden rounded-full uppercase h-[70px] 800px:h-[80px] 1200px:h-[90px] text-[#fff] text-[28px] 800px:text-[32px] 1200px:text-[40px] cursor-pointer;
+  cursor: pointer;
+  background: linear-gradient(90deg, #00B430 0%, #00A8BB 100%);
+  @apply relative overflow-hidden rounded-full uppercase h-[70px] 800px:h-[80px] 1200px:h-[90px] text-[#fff] text-[24px] 800px:text-[32px] 1200px:text-[40px] cursor-pointer font-[700];
 }
 
 .submit-button {
-    font-family: 'Staatliches', sans-serif;
-    cursor: pointer;
-    background: linear-gradient(90deg, #00B430 0%, #00A8BB 100%);
-    @apply relative w-full overflow-hidden rounded-full uppercase h-[60px] 800px:h-[70px] 1200px:h-[70px] text-[#fff] text-[24px] 800px:text-[28px] 1200px:text-[32px] cursor-pointer;
+  cursor: pointer;
+  background: linear-gradient(90deg, #00B430 0%, #00A8BB 100%);
+  @apply relative w-full overflow-hidden rounded-full uppercase h-[60px] 800px:h-[70px] 1200px:h-[70px] text-[#fff] text-[24px] 800px:text-[28px] 1200px:text-[32px] cursor-pointer font-[700];
 }
 
 .main-button::before, .submit-button::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: rgba(255, 255, 255, 0.1);
-    transform: rotate(45deg);
-    animation: shine 2s infinite;
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(45deg);
+  animation: shine 2s infinite;
 }
 
 .shadow {
-    box-shadow: 0 9px 18px 0 #00000014;
+  box-shadow: 0 9px 18px 0 #00000014;
 }
 
 .gift-container {
-    position: relative;
-    cursor: pointer;
-    animation: shake 0.5s ease-in-out infinite;
+  position: relative;
+  cursor: pointer;
+  animation: shake 0.5s ease-in-out infinite;
 }
 
 .gift {
-    transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 @keyframes shake {
-    0%, 100% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(-5deg);
-    }
-    50% {
-        transform: rotate(5deg);
-    }
-    75% {
-        transform: rotate(-3deg);
-    }
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
 }
 
 @keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.1);
-    }
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }
 
 @keyframes shine {
-    0% {
-        transform: translateX(-100%) rotate(45deg);
-    }
-    100% {
-        transform: translateX(100%) rotate(45deg);
-    }
+  0% {
+    transform: translateX(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(45deg);
+  }
 }
 
